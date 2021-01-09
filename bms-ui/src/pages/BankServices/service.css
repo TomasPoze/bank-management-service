@@ -1,0 +1,27 @@
+.service-flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 400px;
+}
+
+.under{
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  text-align: center;
+}
+
+.center{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.csv-span{
+  font-size: 200px;
+  color: #2e2e2e;
+}

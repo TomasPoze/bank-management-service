@@ -11,8 +11,11 @@ export default () => {
       <div className="site-name">Bank Management Service</div>
 
       <div className="header-bar">
-        <NavLink to="">
+        <NavLink to="/services">
           <span>Import / Export</span>
+        </NavLink>
+        <NavLink to="/accounts">
+          <span>Account List</span>
         </NavLink>
       </div>
     </div>
