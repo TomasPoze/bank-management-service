@@ -4,7 +4,6 @@ import io.inventi.bank.service.transaction.entity.AccountTransaction;
 import io.inventi.bank.service.transaction.repository.TransactionRepository;
 import org.springframework.stereotype.Service;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
 
@@ -30,5 +29,9 @@ public class TransactionService {
 
     public List<AccountTransaction> getTransactions() {
         return transactionRepository.findAll();
+    }
+
+    public void createTransaction(AccountTransaction accountTransaction) {
+        transactionRepository.save(accountTransaction);
     }
 }

@@ -71,7 +71,7 @@ export default () => {
             </tr>
           </thead>
           <tbody>
-            {transactions.map(transaction => (
+            {transactions.sort((a, b) => a.operationDate.split('-').reverse().join().localeCompare(b.operationDate.split('-').reverse().join())).map(transaction => (
               <tr key={transaction.id}>
                 <td>{transaction.operationDate}</td>
                 <td>{transaction.accountNumber}</td>

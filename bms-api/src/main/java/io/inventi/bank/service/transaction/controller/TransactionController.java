@@ -20,12 +20,12 @@ public class TransactionController {
     }
 
     @GetMapping("/{id}")
-    public List<AccountTransaction> getTransactionsByAccountId(@PathVariable Long id){
+    public List<AccountTransaction> getTransactionsByAccountId(@PathVariable Long id) {
         return transactionService.getTransactionsByAccountId(id);
     }
 
     @GetMapping("/transactions")
-    public List<AccountTransaction> getTransactions(){
+    public List<AccountTransaction> getTransactions() {
         return transactionService.getTransactions();
     }
 }

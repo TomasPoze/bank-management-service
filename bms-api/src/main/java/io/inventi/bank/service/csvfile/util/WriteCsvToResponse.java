@@ -25,7 +25,7 @@ public class WriteCsvToResponse {
 
             mapStrategy.setType(AccountTransaction.class);
 
-            String[] columns = new String[]{"accountNumber", "operationDate", "beneficiary", "comment", "amount","currency"};
+            String[] columns = new String[]{"accountNumber", "operationDate", "beneficiary", "comment", "amount", "currency"};
 
             mapStrategy.setColumnMapping(columns);
             mapStrategy.setColumnOrderOnWrite(Comparator.naturalOrder());
