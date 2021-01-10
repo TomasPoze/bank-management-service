@@ -26,7 +26,7 @@ public class AccountTransaction {
     private Account account;
 
     @Column(name = "account_number")
-    private String account_numer;
+    private String accountNumber;
 
     @Column(name = "operation_date")
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", shape = JsonFormat.Shape.STRING)

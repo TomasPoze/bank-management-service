@@ -9,3 +9,14 @@ table, td, th {
 .tableM{
   text-align: center;
 }
+
+.center-table{
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  height: 400px;
+}
+
+.noDec{
+  text-decoration: none;
+}

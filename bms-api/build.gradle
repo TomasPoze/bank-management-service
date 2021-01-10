@@ -34,6 +34,9 @@ dependencies {
 	runtimeOnly 'com.h2database:h2'
 	runtimeOnly 'org.postgresql:postgresql'
 
+	// CSV library
+	compile group: 'com.opencsv', name: 'opencsv', version: '5.2'
+
 	// Test
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }

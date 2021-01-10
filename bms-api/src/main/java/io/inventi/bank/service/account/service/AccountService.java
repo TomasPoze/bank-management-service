@@ -1,6 +1,7 @@
 package io.inventi.bank.service.account.service;
 
 import io.inventi.bank.service.account.entity.Account;
+import io.inventi.bank.service.account.exception.AccountNotFoundException;
 import io.inventi.bank.service.account.repository.AccountRepository;
 import org.springframework.stereotype.Service;
 
@@ -14,7 +15,12 @@ public class AccountService {
         this.accountRepository = accountRepository;
     }
 
-    public List<Account> getAllAccounts(){
+    public List<Account> getAllAccounts() {
         return accountRepository.findAll();
+    }
+
+    public Account getAccount(Long id) {
+        return accountRepository.findById(id)
+                .orElseThrow(() -> new AccountNotFoundException("Account was not found by this: " + id + " id."));
     }
 }

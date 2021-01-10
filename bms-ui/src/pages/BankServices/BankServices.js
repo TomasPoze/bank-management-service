@@ -2,6 +2,7 @@ import React from 'react';
 import './service.css'
 import Contrainer from '@material-ui/core/Container'
 import Button from '@material-ui/core/Button';
+import { NavLink } from 'react-router-dom';
 
 export default () => {
 
@@ -15,9 +16,11 @@ export default () => {
           <span className="under">from</span>
         </div>
         <div>
-          <Button variant="contained" color="secondary">
-            Export
-          </Button>
+          <NavLink className="noDec" to="/export">
+            <Button variant="contained" color="secondary">
+              Export
+            </Button>
+          </NavLink>
           <span className="under">to</span>
         </div>
       </div>
