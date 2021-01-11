@@ -10,4 +10,6 @@ public interface TransactionRepository extends JpaRepository<AccountTransaction,
     List<AccountTransaction> findAllByAccountId(Long id);
 
     List<AccountTransaction> findAllByOperationDateBetween(LocalDateTime localDateStart, LocalDateTime localDateEnd);
+
+    List<AccountTransaction> findAllByAccountIdAndOperationDateBetween(Long id, LocalDateTime localDateStart, LocalDateTime localDateEnd);
 }

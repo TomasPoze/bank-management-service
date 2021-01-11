@@ -45,4 +45,7 @@ public class AccountTransaction {
     @Enumerated(EnumType.STRING)
     private AccountCurrency currency;
 
+    @Column(name = "balance")
+    private BigDecimal balance;
+
 }
